@@ -103,7 +103,7 @@ Select An Option To Continue: """
                 for Manufacturer in data[ptype]:
                     for Code in data[ptype][Manufacturer]:
                         for location in data[ptype][Manufacturer][Code]:
-                            for Product in data[ptype][Manufacturer][Code][m]:
+                            for Product in data[ptype][Manufacturer][Code][location]:
                                 if Product.lower().startswith(x.lower()):
                                 
                                     print(Product,Code,Manufacturer,sep=" | ")
